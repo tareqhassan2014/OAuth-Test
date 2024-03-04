@@ -71,9 +71,16 @@ const Headers = () => {
                                     </li>
                                 </>
                             ) : (
-                                <li>
-                                    <Link to="/login">Login</Link>
-                                </li>
+                                <>
+                                    <li>
+                                        <Link to="/login">Login</Link>
+                                    </li>
+                                    <li>
+                                        <a href="https://vercel-express-server.vercel.app/auth/google">
+                                            Sign in with Google
+                                        </a>
+                                    </li>
+                                </>
                             )}
                         </ul>
                     </div>

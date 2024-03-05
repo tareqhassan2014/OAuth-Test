@@ -1,10 +1,10 @@
-import { SERVER_URL } from "../config";
+import { signInWithGoogle } from "../config/firebase";
 import "./login.css";
 
 const Login = () => {
-    const loginWithGoogle = () => {
-        window.open(`${SERVER_URL}/auth/google`, "_self");
-    };
+    // const loginWithGoogle = () => {
+    //     window.open(`${SERVER_URL}/auth/google`, "_self");
+    // };
 
     return (
         <>
@@ -31,7 +31,7 @@ const Login = () => {
                     </form>
                     <button
                         className="login-with-google-btn"
-                        onClick={loginWithGoogle}
+                        onClick={signInWithGoogle}
                     >
                         Sign In With Google
                     </button>
